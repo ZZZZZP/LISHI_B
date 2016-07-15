@@ -22,23 +22,23 @@
     RootViewController *rootVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"RootViewController"];
     [self.window setRootViewController:rootVC];
     // 初始化欢迎界面背景视图
-    self.splashView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIImageView *backImg = [[UIImageView alloc] initWithFrame:self.splashView.bounds];
-    backImg.image = [UIImage imageNamed:@"welcome.jpg"];
-    
-    UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
-    textLabel.text = @"WELCOME LISHI";
-    textLabel.textColor = [UIColor whiteColor];
-    textLabel.textAlignment = NSTextAlignmentCenter;
-    textLabel.font = [UIFont systemFontOfSize:39];
-    textLabel.center = CGPointMake(self.splashView.center.x, self.splashView.center.y + 160);
-    // 添加图片
-    [self.splashView addSubview:backImg];
-    // 添加字体
-    [self.splashView addSubview:textLabel];
-    [self.window addSubview:self.splashView];
-    [self.window bringSubviewToFront:self.splashView];
-    [self performSelector:@selector(showImg) withObject:nil afterDelay:1];
+//    self.splashView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    UIImageView *backImg = [[UIImageView alloc] initWithFrame:self.splashView.bounds];
+//    backImg.image = [UIImage imageNamed:@"welcome.jpg"];
+//    
+//    UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+//    textLabel.text = @"WELCOME LISHI";
+//    textLabel.textColor = [UIColor whiteColor];
+//    textLabel.textAlignment = NSTextAlignmentCenter;
+//    textLabel.font = [UIFont systemFontOfSize:39];
+//    textLabel.center = CGPointMake(self.splashView.center.x, self.splashView.center.y + 160);
+//    // 添加图片
+//    [self.splashView addSubview:backImg];
+//    // 添加字体
+//    [self.splashView addSubview:textLabel];
+//    [self.window addSubview:self.splashView];
+//    [self.window bringSubviewToFront:self.splashView];
+//    [self performSelector:@selector(showImg) withObject:nil afterDelay:1];
     
     
     
