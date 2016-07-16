@@ -12,7 +12,9 @@
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key
 {
-    
+    if ([key isEqualToString:@"catname"]) {
+        _catname = value;
+    }
 }
 
 -(NSString *)description

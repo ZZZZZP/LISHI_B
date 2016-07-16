@@ -67,6 +67,7 @@
 		D67CA0F21D38CF5700C17182 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D67CA0F11D38CF5700C17182 /* 2.jpg */; };
 		D67CA0F61D38D37D00C17182 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D67CA0F51D38D37D00C17182 /* 3.jpg */; };
 		D67CA0FA1D38E0A800C17182 /* 箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = D67CA0F91D38E0A800C17182 /* 箭头.png */; };
+		D67CA0FD1D38E5C800C17182 /* EquipTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67CA0FC1D38E5C800C17182 /* EquipTypeViewController.m */; };
 		FB1C041A433BDD3AA01A9A58 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097D4472229F8357FC223952 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -164,6 +165,8 @@
 		D67CA0F11D38CF5700C17182 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		D67CA0F51D38D37D00C17182 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		D67CA0F91D38E0A800C17182 /* 箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "箭头.png"; sourceTree = "<group>"; };
+		D67CA0FB1D38E5C800C17182 /* EquipTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquipTypeViewController.h; sourceTree = "<group>"; };
+		D67CA0FC1D38E5C800C17182 /* EquipTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquipTypeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -498,6 +501,8 @@
 			children = (
 				D67CA0CA1D38C87800C17182 /* ExchangeViewController.h */,
 				D67CA0CB1D38C87800C17182 /* ExchangeViewController.m */,
+				D67CA0FB1D38E5C800C17182 /* EquipTypeViewController.h */,
+				D67CA0FC1D38E5C800C17182 /* EquipTypeViewController.m */,
 			);
 			name = EquipmentControllers;
 			sourceTree = "<group>";
@@ -694,6 +699,7 @@
 				D67CA0EA1D38C90C00C17182 /* sportList.m in Sources */,
 				C231C64A1D36378F009BB26B /* EquipViewController.m in Sources */,
 				C231C6411D3636AB009BB26B /* BaseViewController.m in Sources */,
+				D67CA0FD1D38E5C800C17182 /* EquipTypeViewController.m in Sources */,
 				D67CA0D21D38C8C000C17182 /* ToolsRequest.m in Sources */,
 				C231C68F1D363FB6009BB26B /* AppDelegate.m in Sources */,
 				C2179BF41D37BBE60028CB92 /* LoginViewController.m in Sources */,

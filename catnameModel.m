@@ -14,12 +14,13 @@
 {
     if ([key isEqualToString:@"id"]) {
         _catnameID = value;
-    }else if ([key isEqualToString:@"list"])
-    {
-        ListModel *model = [[ListModel alloc] init];
-        [model setValuesForKeysWithDictionary:value];
-        _list = model;
     }
+//    else if ([key isEqualToString:@"list"])
+//    {
+//        ListModel *model = [[ListModel alloc] init];
+//        [model setValuesForKeysWithDictionary:value];
+//        _list = model;
+//    }
 }
 
 -(NSString *)description

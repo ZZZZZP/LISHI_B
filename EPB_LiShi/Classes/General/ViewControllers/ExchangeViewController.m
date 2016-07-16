@@ -9,6 +9,7 @@
 #import "ExchangeViewController.h"
 #import "ToolsTableViewCell.h"
 #import "ExchangeRequest.h"
+#import "EquipTypeViewController.h"
 
 @interface ExchangeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -17,6 +18,7 @@
 
 @property (strong, nonatomic) NSMutableArray *JFArray;
 @property (strong, nonatomic) NSMutableArray *FLArray;
+
 @end
 
 @implementation ExchangeViewController
@@ -24,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //初始化数组
     self.JFArray = [[NSMutableArray alloc] init];
     self.FLArray = [NSMutableArray array];
     
@@ -35,6 +38,14 @@
     [self JFDataRequest];
     [self FLDataRequest];
     
+}
+
+#pragma mark --- 设置跳转到装备库的界面 ---
+- (IBAction)EquipButton:(id)sender {
+    
+    EquipTypeViewController *equipVC = [[EquipTypeViewController alloc] init];
+    
+    [self.navigationController pushViewController:equipVC animated:YES];
 }
 
 #pragma mark --- 设置更多的点击事件 ---
@@ -113,7 +124,7 @@
         }
         
 //        NSLog(@"JFGoods == %@",weakself.JFArray);
-        NSLog(@"JFGoods == %@",weakself.FLArray);
+//        NSLog(@"JFGoods == %@",weakself.FLArray);
         
         dispatch_async(dispatch_get_main_queue(), ^{
             

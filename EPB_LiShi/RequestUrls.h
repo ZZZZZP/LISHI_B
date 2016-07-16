@@ -11,8 +11,8 @@
 
 //装备界面
 #define ToolsRequest_Url @"http://api.lis99.com/zhuangbei/fenlei"
-
 //福利积分兑换界面
 #define ExchangeRequest_Url @"http://api.lis99.com/v3/zhuangbei"
+
 
 #endif /* RequestUrls_h */
